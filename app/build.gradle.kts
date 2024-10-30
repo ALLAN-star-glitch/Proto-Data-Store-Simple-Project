@@ -50,7 +50,7 @@ android {
     }
     protobuf {
         protoc {
-            artifact = "com.google.protobuf:protoc:3.21.12" // Update to a compatible version
+            artifact = "com.google.protobuf:protoc:3.21.5"
         }
         generateProtoTasks {
             all().forEach { task ->
@@ -92,6 +92,6 @@ dependencies {
 
 
     implementation("androidx.datastore:datastore:1.1.1")
-    implementation ("com.google.protobuf:protobuf-javalite:4.29.0-RC1")
-    implementation ("com.google.protobuf:protobuf-kotlin-lite:4.29.0-RC1")
+    implementation ("com.google.protobuf:protobuf-javalite:3.21.5")
+    implementation ("com.google.protobuf:protobuf-kotlin-lite:3.21.5")
 }
