@@ -72,6 +72,9 @@ android {
 
 dependencies {
 
+    val lifecycle_version = "2.8.6"
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -94,4 +97,15 @@ dependencies {
     implementation("androidx.datastore:datastore:1.1.1")
     implementation ("com.google.protobuf:protobuf-javalite:3.21.5")
     implementation ("com.google.protobuf:protobuf-kotlin-lite:3.21.5")
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    // ViewModel utilities for Compose
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+    // Lifecycle utilities for Compose
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version")
 }
